@@ -5,19 +5,75 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Contact</title>
-    <link rel="stylesheet" href="CSS/Contact.css">
+    <link rel="stylesheet" href="CSS/css.css">
 </head>
-<h1>Contact</h1>
 <body>
-    <source> <img src="Images/kalender_logo.png" width="100" height="100"
-    <p><strong>16/11/1993</strong></p>
-    <source> <img src="Images/wereld_pictogram.png" width="100" height="100"
-    <p><strong>België</strong></p>
-    <source> <img src="Images/adres_logo.jpg"  width="100" height="100"
-    <p><strong> Duinenstraat 7, 2440 Geel</strong></p>
-    <source> <img src="Images/Mail_logo.jpg" width="100" height="100"
-    <p><strong>geboersstijn@gmail.com</strong></p>
-    <source> <img src="Images/telefoon_logo.png" width="100" height="100"
-    <p><strong>+324 79 78 73 57</strong></p>  
+<input class="menu-icon" type="checkbox" id="menu-icon" name="menu-icon"/>
+<label for="menu-icon"></label>
+<nav class="nav"> 		
+    <ul class="pt-5">
+        <li><a href="About.html">Over mij</a></li>
+        <li><a href="posmin.html">Positieve en negatieve eigenschappen</a></li>
+        <li><a href="CV.html">Curriculum Vitae</a></li>
+        <li><a href="Contact.html">Contact</a></li>
+    </ul>
+</nav>
+<div>
+    <img src="Images/Mail_logo.jpg" alt="logo mail" width="20" height="20">r0300338@student.thomasmore.be
+</div>
+<div>
+    <img src="Images/linkedin.png" alt="Linkedin" width="20" height="20"> <a href="https://www.linkedin.com/in/stijngeboers1993/" target="_blank">Klik hier om naar mijn linkedin profiel te gaan</a>
+</div>
+<div class="contactform">
+<form action="https://tm-statweb.be/sendmail.php" method="post"> 
+    <h3>Neem contact met me op door onderstaand formulier in te vullen</h3>
+
+    <table>
+
+        
+    <tr>
+        <th>
+        <div>
+          <label for="Voornaam">Voornaam</label>
+          <input type="text" id="voornaam" name="Voornaam" placeholder="Voornaam">
+        </div>
+        </th>
+        </tr>
+    <tr>
+        <th>
+        <div>
+          <label for="Achternaam">Achternaam</label>
+          <input type="text" id="achternaam" name="achternaam" placeholder="Achternaam">
+        </div>
+        </th>
+        </tr>
+    <tr>
+        <th>
+        <div>
+          <label for="Email">Email</label>
+            <input type="email"  id="Email" name="Email" placeholder="Vul je Emailadres in">
+        </div>
+        </th>
+        </tr>
+    <tr>
+        <th>
+        <div>
+          <label for="Bericht">Bericht</label>
+          <textarea id="Bericht" name="Bericht" placeholder="Laat hier je boodschap achter" style="height:50px"></textarea>
+        </div>
+        </th>
+    </tr>
+    <tr>
+        <td>
+            <input type="hidden" name="studentemail" value="r03003338@student.thomasmore.be">
+            <input type="submit" value="Submit">
+        </td>
+    </tr>
+        
+      </div>
+    </table>
+
+</form>
+</div>
 </body>
 </html>
